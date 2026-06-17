@@ -125,7 +125,7 @@ requirements.yml` to install the role:
 ---
 - src: https:///github.com/cendio/ansible-role-thinlinc-server.git
   scm: git
-  name: thinlinc-server
+  name: thinlinc_server
   version: v1.10
 ```
 
@@ -154,7 +154,7 @@ applying the thinlinc-server role to the thinlinc_servers group with a
 ```yaml
 - hosts: thinlinc_servers
   roles:
-    - { role: thinlinc-server, thinlinc_accept_eula: "yes" }
+    - { role: thinlinc_server, thinlinc_accept_eula: "yes" }
 ```
 
 The final step is to apply the playbook to the inventory, like this:
