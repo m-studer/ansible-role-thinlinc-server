@@ -11,7 +11,7 @@
 # clever enough to handle our upgrades:
 # https://github.com/ansible/ansible/issues/77150
 #
-- name: Install ThinLinc Software
+- name: Install ThinLinc Software # noqa: command-instead-of-module no-changed-when
   ansible.builtin.command: >
     /usr/bin/apt-get install -y
     -o Dpkg::Options::="--no-debsig"

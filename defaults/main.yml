@@ -1,15 +1,15 @@
 ---
 # defaults file for thinlinc_server
 
-thinlinc_accept_eula: "no"
+thinlinc_accept_eula: false
 
 thinlinc_version: "4.20.1"
 thinlinc_bundle_path: "tl-{{ thinlinc_version }}-server.zip"
 
-thinlinc_autoinstall_dependencies: "yes"
+thinlinc_autoinstall_dependencies: true
 
 thinlinc_email: "root@localhost"
-thinlinc_printers: "yes"
+thinlinc_printers: true
 
 # The port on which the tlwebaccess service should listen
 thinlinc_webaccess_port: 300
